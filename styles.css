@@ -5,7 +5,7 @@
   margin: auto;
   font-size: 18px;
   background-color: darkslategray;
-  color:white;
+  color: white;
 }
 
 @media screen and (max-width: 400px) {
@@ -14,7 +14,6 @@
     text-align: center;
     position: fixed;
   }
-
 
   .logo-container {
     flex: 1;
@@ -35,7 +34,6 @@ header {
   position: sticky;
   top: 0px;
   font-weight: bold;
- 
   border-bottom: coral 3px solid;
   z-index: 9999;
 }
@@ -58,27 +56,27 @@ nav {
   flex: 1;
   justify-content: flex-end;
 }
- a{
-    text-decoration: none;
- }
- a:hover {
-    color:coral;
- }
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: coral;
+}
 
 #promotion {
   position: relative;
-background-color:coral;
+  background-color: coral;
   animation: "my-fade-in" 4s;
 }
 
 @keyframes my-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 #promotion > img {
   width: 100%;
   animation: my-fade-in 4s;
@@ -106,15 +104,14 @@ button {
   font-weight: bold;
   font-size: 3vmin;
   margin: 1vmin;
-  color:darkslategray;
-  background-color:coral;
+  color: darkslategray;
+  background-color: coral;
   border-radius: 1vmin;
   border: 2px solid;
   border-color: lightgray;
-
 }
 button:hover {
-  background-color:lightgray;
+  background-color: lightgray;
   color: darkslategray;
   border-color: coral;
 }
@@ -122,49 +119,50 @@ button:hover {
 #categories-container {
   display: flex;
   flex-wrap: wrap;
-  margin:5vmin;
-gap:3vmin;
-justify-content:space-between;
-min-height:calc(100vh - 275px);
-
+  margin: 5vmin;
+  gap: 5vmin;
+  min-height: calc(100vh - 275px);
+  align-items: flex-start;
 }
 
 .category-box {
   flex: 0 1 0;
 }
 
-.category-box  img {
-    height: 40vmin;
-    border-radius: 1vmin;
-   
-
+.category-box img {
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 1vmin;
 }
 
 .category-box h2 {
-    margin-top: 10px;
-    font-size: larger;
-    font-weight: bold;
-   
-  
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+ 
 }
 
-.category-box p {
-    padding-right: 10vmin;
-margin-bottom: 10px;
+
+.category-box a {
+  font-weight: bolder;
+  color: coral;
+  font-size: medium;
+  display:block;
+}
+
+.category-box a::after{
+    content:" >>";
 }
 
 footer {
   display: flex;
-  border-top:coral 2px solid;
-  padding-top:5px;
-
+  border-top: coral 2px solid;
+  padding-top: 5px;
 }
 #footer-logo {
   flex: 1;
   text-align: right;
   padding-right: 10px;
-
-
 }
 
 #footer-copyright {
