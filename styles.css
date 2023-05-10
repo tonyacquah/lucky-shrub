@@ -8,11 +8,11 @@
   color: white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   header {
     flex-direction: column;
     text-align: center;
-    position: fixed;
+    position: static !important;
   }
 
   .logo-container {
@@ -23,7 +23,7 @@
   }
   .nav-item {
     min-width: 70vw;
-    padding: 20px;
+   
   }
 }
 
@@ -49,12 +49,14 @@ nav {
   min-width: calc(100vw - 150px);
   display: flex;
   margin: 30px;
+  gap: 15px;
   justify-content: space-between;
 }
 
 .nav-item {
   flex: 1;
   justify-content: flex-end;
+  
 }
 a {
   text-decoration: none;
