@@ -4,9 +4,6 @@
   font-family: "Raleway", sans-serif;
   margin: auto;
   font-size: 18px;
- 
-
- 
 }
 
 @media screen and (max-width: 400px) {
@@ -16,14 +13,6 @@
     position: fixed;
   }
 
-  @keyframes my-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   #logo-container {
     flex: 1;
@@ -35,7 +24,6 @@
     min-width: 70vw;
     padding: 20px;
   }
-
 }
 
 header {
@@ -44,8 +32,7 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0px;
-  z-index:9999;
-
+  z-index: 9999;
 }
 #logo {
   height: 80px;
@@ -53,7 +40,6 @@ header {
 
 #logo-container {
   padding-left: 10px;
-  
 }
 
 nav {
@@ -69,49 +55,56 @@ nav {
 }
 
 #promotion {
-  position:relative;
-  animation: my-fade-in 4s ease-in;
- 
+  position: relative;
 
+  animation: "my-fade-in" 4s;
 }
 
+@keyframes my-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 #promotion > img {
-    width:100%;
-    
+  width: 100%;
+  animation: my-fade-in 4s;
 }
 
-#promotion > p{
-    position:absolute;
-    top:50%;
-    left:50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    color:lightgray;
-    font-size: 4vmin;
-    font-weight: 600;
-    background-color: rgba(47, 79, 79, 0.9);/* darkslategray;*/
-    border-radius:1vmin;
-    padding:2vmin;
-    min-width: 70vmin
-
+#promotion > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: lightgray;
+  font-size: 4vmin;
+  font-weight: 600;
+  background-color: rgba(47, 79, 79, 0.9); /* darkslategray;*/
+  border-radius: 1vmin;
+  padding: 2vmin;
+  min-width: 70vmin;
+  animation: my-fade-in 4s;
 }
 
 button {
-   outline:none;
-   padding:2vmin;
-   font-weight: bold;
-   font-size:3vmin;
-   margin:1vmin;
-   color:slategray;
-   background-color:white;
-   border-radius: 1vmin;
-   border:2px solid;
-   border-color: lightgray;
+  outline: none;
+  padding: 2vmin;
+  font-weight: bold;
+  font-size: 3vmin;
+  margin: 1vmin;
+  color: slategray;
+  background-color: white;
+  border-radius: 1vmin;
+  border: 2px solid;
+  border-color: lightgray;
+
 }
-button:hover{
-    background-color: white;
-    color:darkslategray;
-   
+button:hover {
+  background-color:lightgray;
+  color: darkslategray;
 }
 
 #categories-container {
