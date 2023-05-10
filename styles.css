@@ -125,6 +125,7 @@ button:hover {
   margin:5vmin;
 gap:3vmin;
 justify-content:space-between;
+min-height:calc(100vh - 275px);
 
 }
 
